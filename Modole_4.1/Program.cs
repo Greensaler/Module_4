@@ -23,9 +23,35 @@ namespace Modole_4._1
             double Y2 = 7;
             var C1 = (X1 < Y2) | (X1 != Y2);
             Console.WriteLine(C1);
-            Console.ReadKey();
-           
-           
+
+            var color = Console.ReadLine();
+
+            if (color == "red")
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is red!");
+            }
+
+            else if (color == "green")
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is green!");
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is cyan!");
+            }
+
+
+
+
         }
     }
 }
