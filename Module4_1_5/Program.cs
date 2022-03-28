@@ -7,13 +7,11 @@ namespace Module4_1_5
         static void Main(string[] args)
         {
             Console.WriteLine("Введите переменную A, B, C, Y по порядку");
-            int A = 1;
-            int B = 3;
-            double X = 5;
-            double Y = 5;
+            var a = 6;
+            var b = 7;
 
-            bool C = ( A < B ) | ( X > Y );
-            Console.WriteLine("{0}", C);
+            var c = (a > b) ^ (a != b);
+            Console.WriteLine("{0}", c);
             Console.ReadKey();
         }
     }
